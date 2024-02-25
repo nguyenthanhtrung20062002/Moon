@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    toll bar and action bar-->
+    <dimen name="action_bar_height">24dp</dimen>
+    <dimen name="toolbar_height">64dp</dimen>
+    <!--    margin-->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_extremely_large">32dp</dimen>
+    <!--    text size-->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_extremely_large">30sp</dimen>
+    <!--    button height-->
+    <dimen name="btn_hight_small">32dp</dimen>
+    <dimen name="btn_height_medium">48dp</dimen>
+    <dimen name="btn_height_large">56dp</dimen>
+    <dimen name="btn_back">48dp</dimen>
+</resources>
