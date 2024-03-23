@@ -1,207 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.HomeFragment"
-    android:background="@color/black">
+    android:background="@color/black"
+    android:scrollbars="vertical"
+    android:paddingHorizontal="@dimen/margin_medium"
+    android:paddingTop="@dimen/margin_medium">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:layout_marginHorizontal="@dimen/margin_medium"
-        android:layout_marginTop="@dimen/margin_medium">
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Good Afternoon"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/text_size_large"
-                        android:textStyle="bold"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_effect_text"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
+                    android:text="Good Afternoon"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="right">
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:shapeAppearanceOverlay="@style/roundedImageView"
-                        android:src="@drawable/ic_launcher_background"
-                        android:scaleType="centerCrop"/>
-                </LinearLayout>
+                    android:src="@drawable/ic_effect_text"/>
             </LinearLayout>
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp">
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Trending"
-                        android:drawableLeft="@drawable/ic_trending_white"
-                        android:background="@drawable/bg_button_cate"
-                        android:textColor="@color/white"
-                        android:paddingHorizontal="8dp"
-                        android:drawablePadding="5dp"
-                        android:layout_marginRight="5dp"/>
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="5-Minutes Read"
-                        android:drawableLeft="@drawable/ic_trending_white"
-                        android:background="@drawable/bg_button_cate"
-                        android:textColor="@color/white"
-                        android:paddingHorizontal="8dp"
-                        android:drawablePadding="5dp"
-                        android:layout_marginRight="5dp"/>
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Quick Listen"
-                        android:drawableLeft="@drawable/ic_trending_white"
-                        android:background="@drawable/bg_button_cate"
-                        android:textColor="@color/white"
-                        android:paddingHorizontal="8dp"
-                        android:drawablePadding="5dp"/>
-                </LinearLayout>
-            </HorizontalScrollView>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/picture"
-                android:layout_marginVertical="@dimen/margin_medium"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="@dimen/margin_small">
-                <TextView
+                android:gravity="right">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    android:src="@drawable/ic_launcher_background"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Trending"
-                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/ic_trending_white"
+                    android:background="@drawable/bg_button_cate"
                     android:textColor="@color/white"
-                    android:textStyle="bold"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
+                    android:paddingHorizontal="8dp"
+                    android:drawablePadding="5dp"
+                    android:layout_marginRight="5dp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="right">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Show all"
-                        android:textColor="@color/accentGreen"
-                        android:textSize="@dimen/text_size_medium"
-                        android:layout_marginHorizontal="5dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_next"
-                        android:layout_gravity="center_vertical"/>
-                </LinearLayout>
+                    android:text="5-Minutes Read"
+                    android:drawableLeft="@drawable/ic_trending_white"
+                    android:background="@drawable/bg_button_cate"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="8dp"
+                    android:drawablePadding="5dp"
+                    android:layout_marginRight="5dp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Listen"
+                    android:drawableLeft="@drawable/ic_trending_white"
+                    android:background="@drawable/bg_button_cate"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="8dp"
+                    android:drawablePadding="5dp"/>
             </LinearLayout>
-            <ListView
+        </HorizontalScrollView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/picture"
+            android:layout_marginVertical="@dimen/margin_medium"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin_small">
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scrollbars="horizontal"
-                tools:listitem="@layout/book_item"/>
+                android:text="Trending"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:layout_marginBottom="@dimen/margin_small">
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="For you"
-                    android:textSize="20dp"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="right">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Show all"
-                        android:textColor="@color/accentGreen"
-                        android:textSize="@dimen/text_size_medium"
-                        android:layout_marginHorizontal="5dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_next"
-                        android:layout_gravity="center_vertical"/>
-                </LinearLayout>
-            </LinearLayout>
-            <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scrollbars="horizontal"
-                tools:listitem="@layout/book_item"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:layout_marginBottom="@dimen/margin_small">
-                <TextView
+                    android:text="Show all"
+                    android:textColor="@color/accentGreen"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="5dp"/>
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5-Minutes read"
-                    android:textSize="20dp"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="right">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Show all"
-                        android:textColor="@color/accentGreen"
-                        android:textSize="@dimen/text_size_medium"
-                        android:layout_marginHorizontal="5dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_next"
-                        android:layout_gravity="center_vertical"/>
-                </LinearLayout>
+                    android:src="@drawable/ic_next"
+                    android:layout_gravity="center_vertical"/>
             </LinearLayout>
-            <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scrollbars="horizontal"
-                tools:listitem="@layout/book_item"/>
         </LinearLayout>
-    </ScrollView>
-</FrameLayout>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            tools:listitem="@layout/book_item"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_small">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For you"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show all"
+                    android:textColor="@color/accentGreen"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_next"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            tools:listitem="@layout/book_item"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_small">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5-Minutes read"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show all"
+                    android:textColor="@color/accentGreen"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_next"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            tools:listitem="@layout/book_item"/>
+    </LinearLayout>
+</ScrollView>

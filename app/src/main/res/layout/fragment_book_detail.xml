@@ -1,171 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.BookDetailFragment"
-    android:orientation="vertical"
     android:background="@color/black"
-    android:paddingHorizontal="20dp">
-
-    <RelativeLayout
+    android:paddingHorizontal="20dp"
+    android:scrollbars="vertical">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/book"
-        android:gravity="bottom">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/book"
+            android:gravity="bottom">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_bt_left"
+                    android:text="Read Book"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textAllCaps="false"
+                    android:drawableStart="@drawable/ic_read_book"
+                    android:paddingHorizontal="@dimen/margin_medium"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_bt_right"
+                    android:text="Play Book"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textAllCaps="false"
+                    android:drawableStart="@drawable/ic_headphone2"
+                    android:paddingHorizontal="@dimen/margin_medium"/>
+            </LinearLayout>
+        </RelativeLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:background="@drawable/custom_bt_left"
-                android:text="Read Book"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="@dimen/text_size_medium"
-                android:textAllCaps="false"
-                android:drawableStart="@drawable/ic_read_book"
-                android:paddingHorizontal="@dimen/margin_medium"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:background="@drawable/custom_bt_right"
-                android:text="Play Book"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="@dimen/text_size_medium"
-                android:textAllCaps="false"
-                android:drawableStart="@drawable/ic_headphone2"
-                android:paddingHorizontal="@dimen/margin_medium"/>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_medium">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Project Management for the Unofficial Proect Manager"
-            android:textColor="@color/white"
-            android:textSize="@dimen/text_size_large"
-            android:textStyle="bold"
-            android:paddingRight="@dimen/margin_large"/>
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ic_mark"/>
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Kory Kogon, Suzette Blakemore, and James wood"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size_medium"
-        android:textStyle="bold"
-        android:layout_marginTop="@dimen/margin_small"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="A FanklinConvey Title"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size_small"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="@dimen/margin_medium">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="@dimen/btn_hight_small"
-            android:background="@drawable/custom_bt_left"
-            android:text="18 min"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="@dimen/text_size_medium"
-            android:textAllCaps="false"
-            android:drawableStart="@drawable/ic_time"
-            android:paddingHorizontal="@dimen/margin_medium" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="@dimen/btn_hight_small"
-            android:background="@drawable/custom_bt_right"
-            android:text="6 key ideas"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="@dimen/text_size_medium"
-            android:textAllCaps="false"
-            android:drawableStart="@drawable/ic_ideas"
-            android:paddingLeft="@dimen/margin_medium"/>
-    </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="About this Book"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="@dimen/text_size_medium"
-        android:layout_marginTop="@dimen/margin_medium"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Getting Along (2022) describes the importance of workplace interactions and their effecs on productivity and creaiviy."
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size_medium"
-        android:layout_marginTop="@dimen/margin_small"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_bt_cate2"
-        android:text="Fiction"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_marginVertical="@dimen/margin_medium"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="@dimen/margin_small">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Similar Books"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:gravity="right">
+            android:layout_marginTop="@dimen/margin_medium">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Show all"
-                android:textColor="@color/accentGreen"
-                android:textSize="@dimen/text_size_medium"
-                android:layout_marginHorizontal="5dp"/>
+                android:layout_weight="1"
+                android:text="Project Management for the Unofficial Proect Manager"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/margin_large"/>
             <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_mark"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kory Kogon, Suzette Blakemore, and James wood"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_small"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A FanklinConvey Title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_medium">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="@dimen/btn_hight_small"
+                android:background="@drawable/custom_bt_left"
+                android:text="18 min"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_medium"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_time"
+                android:paddingHorizontal="@dimen/margin_medium" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="@dimen/btn_hight_small"
+                android:background="@drawable/custom_bt_right"
+                android:text="6 key ideas"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_medium"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_ideas"
+                android:paddingLeft="@dimen/margin_medium"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About this Book"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginTop="@dimen/margin_medium"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Getting Along (2022) describes the importance of workplace interactions and their effecs on productivity and creaiviy."
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_bt_cate2"
+            android:text="Fiction"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginVertical="@dimen/margin_medium"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin_small">
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_next"
-                android:layout_gravity="center_vertical"/>
+                android:text="Similar Books"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show all"
+                    android:textColor="@color/accentGreen"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_next"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
         </LinearLayout>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            tools:listitem="@layout/book_item"/>
     </LinearLayout>
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scrollbars="horizontal"
-        tools:listitem="@layout/book_item"/>
-</LinearLayout>
+</ScrollView>
