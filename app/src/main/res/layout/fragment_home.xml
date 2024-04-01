@@ -56,6 +56,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textAllCaps="false"
                     android:text="Trending"
                     android:drawableLeft="@drawable/ic_trending_white"
                     android:background="@drawable/bg_button_cate"
@@ -67,6 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5-Minutes Read"
+                    android:textAllCaps="false"
                     android:drawableLeft="@drawable/ic_trending_white"
                     android:background="@drawable/bg_button_cate"
                     android:textColor="@color/white"
@@ -76,6 +78,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textAllCaps="false"
                     android:text="Quick Listen"
                     android:drawableLeft="@drawable/ic_trending_white"
                     android:background="@drawable/bg_button_cate"
@@ -116,7 +119,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_next"
+                    android:src="@drawable/ic_show_all"
                     android:layout_gravity="center_vertical"/>
             </LinearLayout>
         </LinearLayout>
@@ -153,7 +156,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_next"
+                    android:src="@drawable/ic_show_all"
                     android:layout_gravity="center_vertical"/>
             </LinearLayout>
         </LinearLayout>
@@ -190,7 +193,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_next"
+                    android:src="@drawable/ic_show_all"
                     android:layout_gravity="center_vertical"/>
             </LinearLayout>
         </LinearLayout>
