@@ -1,146 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.ExploreFragment"
-    android:background="@color/black"
-    android:paddingVertical="@dimen/margin_small"
-    android:paddingHorizontal="@dimen/margin_medium">
+    android:background="@color/black">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/tvTitlePage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Explore"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size_extremely_large"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <ImageView
-        android:id="@+id/imgUnderLine"
-        app:layout_constraintStart_toStartOf="@id/tvTitlePage"
-        app:layout_constraintTop_toBottomOf="@id/tvTitlePage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_underline" />
-    <EditText
-        android:id="@+id/edtSearch"
-        app:layout_constraintTop_toBottomOf="@id/imgUnderLine"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_search"
-        app:layout_constraintStart_toStartOf="@id/imgUnderLine"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:hint="Title, author or keyword"
-        android:textColorHint="@color/gray2"
-        android:textSize="@dimen/text_size_medium"
-        android:paddingHorizontal="@dimen/margin_medium"
-        android:paddingVertical="14dp"
-        android:drawableLeft="@drawable/ic_search"
-        android:drawablePadding="@dimen/margin_medium"/>
-    <TextView
-        android:id="@+id/tvTopics"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/edtSearch"
-        app:layout_constraintTop_toBottomOf="@id/edtSearch"
-        android:layout_marginTop="@dimen/margin_large"
-        android:text="Topics"
-        android:textStyle="bold"
-        android:textSize="@dimen/text_size_large"
-        android:textColor="@color/white"/>
-    <Button
-        android:id="@+id/cateBt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/tvTopics"
-        app:layout_constraintTop_toBottomOf="@id/tvTopics"
-        android:background="@drawable/custom_bt_cate2"
-        android:text="Fiction"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:layout_marginVertical="@dimen/margin_medium"/>
-    <LinearLayout
-        android:id="@+id/lncate1"
-        app:layout_constraintStart_toStartOf="@+id/cateBt"
-        app:layout_constraintTop_toBottomOf="@+id/cateBt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_marginTop="@dimen/margin_large"
-        android:layout_marginBottom="@dimen/margin_small">
+        android:layout_height="match_parent"
+        android:paddingVertical="@dimen/margin_small"
+        android:paddingHorizontal="@dimen/margin_medium">
         <TextView
+            android:id="@+id/tvTitlePage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Explore"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_extremely_large"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imgUnderLine"
+            app:layout_constraintStart_toStartOf="@id/tvTitlePage"
+            app:layout_constraintTop_toBottomOf="@id/tvTitlePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_underline" />
+        <EditText
+            android:id="@+id/edtSearch"
+            app:layout_constraintTop_toBottomOf="@id/imgUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_search"
+            app:layout_constraintStart_toStartOf="@id/imgUnderLine"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:hint="Title, author or keyword"
+            android:textColorHint="@color/gray2"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingHorizontal="@dimen/margin_medium"
+            android:paddingVertical="14dp"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/margin_medium"/>
+        <TextView
+            android:id="@+id/tvTopics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/edtSearch"
+            app:layout_constraintTop_toBottomOf="@id/edtSearch"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="Topics"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/cateBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tvTopics"
+            app:layout_constraintTop_toBottomOf="@id/tvTopics"
+            android:background="@drawable/custom_bt_cate2"
             android:text="Fiction"
-            android:textSize="20dp"
             android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:textAllCaps="false"
+            android:layout_marginVertical="@dimen/margin_medium"/>
         <LinearLayout
+            android:id="@+id/lncate1"
+            app:layout_constraintStart_toStartOf="@+id/cateBt"
+            app:layout_constraintTop_toBottomOf="@+id/cateBt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:gravity="right">
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_small">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Show all"
-                android:textColor="@color/accentGreen"
-                android:textSize="@dimen/text_size_medium"
-                android:layout_marginHorizontal="5dp"/>
-            <ImageView
-                android:layout_width="wrap_content"
+                android:text="Fiction"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_show_all"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show all"
+                    android:textColor="@color/accentGreen"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_show_all"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-    <ListView
-        android:id="@+id/lvBook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scrollbars="horizontal"
-        tools:listitem="@layout/book_item"
-        app:layout_constraintStart_toStartOf="@+id/lncate1"
-        app:layout_constraintTop_toBottomOf="@+id/lncate1"
-        android:layout_marginTop="@dimen/margin_small"/>
-    <LinearLayout
-        android:id="@+id/lncate2"
-        app:layout_constraintStart_toStartOf="@+id/lvBook"
-        app:layout_constraintTop_toBottomOf="@+id/lvBook"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_marginTop="@dimen/margin_large"
-        android:layout_marginBottom="@dimen/margin_small">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Culture &amp; Society"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
-        <LinearLayout
+        <ScrollView
+            android:id="@+id/scrollView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:gravity="right">
+            app:layout_constraintStart_toStartOf="@+id/lncate1"
+            app:layout_constraintTop_toBottomOf="@+id/lncate1"
+            android:scrollbars="horizontal">
+            <ListView
+                android:id="@+id/lvBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                tools:listitem="@layout/book_item"
+                android:layout_marginTop="@dimen/margin_small"/>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/lncate2"
+            app:layout_constraintStart_toStartOf="@+id/scrollView1"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_small">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Show all"
-                android:textColor="@color/accentGreen"
-                android:textSize="@dimen/text_size_medium"
-                android:layout_marginHorizontal="5dp"/>
-            <ImageView
+                android:text="Culture &amp; Society"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show all"
+                    android:textColor="@color/accentGreen"
+                    android:textSize="@dimen/text_size_medium"
+                    android:layout_marginHorizontal="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_show_all"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/lncate2"
+            app:layout_constraintTop_toBottomOf="@+id/lncate2"
+            android:scrollbars="horizontal">
+            <ListView
+                android:id="@+id/lvBook2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_show_all"
-                android:layout_gravity="center_vertical"/>
-        </LinearLayout>
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                android:scrollbars="horizontal"
+                tools:listitem="@layout/book_item"
+                android:layout_marginTop="@dimen/margin_small"/>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

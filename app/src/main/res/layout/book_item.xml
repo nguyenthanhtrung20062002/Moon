@@ -32,31 +32,31 @@
             android:textColor="@color/accentGreen"
             android:textStyle="bold"
             android:layout_marginVertical="5dp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_headphone"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5m"
-                android:textColor="@color/white"
-                android:layout_marginHorizontal="5dp"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_glasses"
-                android:layout_marginLeft="@dimen/margin_medium"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8m"
-                android:textColor="@color/white"
-                android:layout_marginHorizontal="5dp"/>
-        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical">-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_headphone"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="5m"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginHorizontal="5dp"/>-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_glasses"-->
+<!--                android:layout_marginLeft="@dimen/margin_medium"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="8m"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginHorizontal="5dp"/>-->
+<!--        </LinearLayout>-->
     </LinearLayout>
 </LinearLayout>
